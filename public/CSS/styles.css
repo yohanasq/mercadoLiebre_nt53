@@ -159,6 +159,45 @@
     margin: 5px;
     color:white
   }
+  main h3{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .last-visit, .offers{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .last-visit .products{
+    width: 90%;
+  }
+  .products article{
+    background:white;
+    padding: 10px 0;
+  }
+  .products article i{
+    color:green;
+    border: 1px solid green;
+    background: white;
+    border-radius: 50%;
+    padding: 8px;
+    position: absolute;
+    top: -15px;
+    right: 20px;
+    width: 35px;
+    height: 35px;
+  }
+  .main-article{
+    display:flex;
+    flex-wrap:wrap;
+    position: relative;
+    padding: 10px;
+    border-top: #666;
+  }
+  .offers .products{
+    width: 95%;
+  }
   
   article div.main-article {
     border-top: solid 1px #ebebeb;
