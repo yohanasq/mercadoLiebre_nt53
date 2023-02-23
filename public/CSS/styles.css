@@ -1,325 +1,216 @@
-* {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-  }
-  a{
-    text-decoration: none;
-    color: black;
-  }
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: var(--grisClaro);
+  background-color: #ebebeb;
+}
+a{
+  text-decoration: none;
+  color: black
+}
+ul{
+  list-style: none;
   
-  ul{
-    list-style: none;
-    
-  }
-  body {
-    background-color:#B5B2B2 ;
-    background-color: #ebebeb;
-  }
+}
+
+img{
+  width: 100%;
+
+}
+html{
+  font-family: 'roboto', sans-serif;
+}
+header{
+/* border:3px solid green; */
+background-color: #EAC926;
+display: flex;
+flex-direction: column;
+}
+
+.logo-container{
+  /* border: 3px solid  red; */
+  display: flex;
+  flex-direction: column;
+}
+.menu-container{
+  /* border:red 3px solid; */
+  display: none;
+}
+
+.burguer-container{
+  /* border: 3px solid red; */
+  display: flex;
+  justify-content: center;
+
+ 
+
+}
+.burguer-menu{
+  background-color:#03264C;
+  border-radius: 5px;
+  /* padding: 5%; */
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  color:#fff;
+}
+.logo-bar-container{
+  /* /* border: 3px solid gray; */
+  display: flex; 
+
+}
+.card-container{
+  /* border: 3px solid gray; */
+  padding: 15px;
+}
+.logo{
+  /* border:3px solid pink; */
+  width: 50%;
+  padding: 10px;
+}
+.search-button-container{
+  /* border: 3px solid pink; */
+  display: flex;
+  align-items: center;
+  width: 50%;
+
+}
+.search-container{
+  /* border: 3px solid brown; */
+  display: flex;
+  width: 90%;
+  height: 25%;
+
+}
+.car-title{
+  font-weight: 400;
+  text-align: center;
+  font-size: robot;
+}
+.car-title{
+  margin-right: 10px;
+}
+input{
+  width: 95%;
+  border: none;
+  background-color: #fff;
+  border-radius: 5px 0 0 5px;
+}
+button{
+  width: 15%;
+  padding: 1;
+  border: none;
+  background-color:#fff;
+  border-radius: 0 5px 5px 0;
+}
+
+main h3{
+   margin-top: 10px;
+   margin-bottom: 10px;
+   text-align: center;
+}
+.last-visit, .offers{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.last-visit .products{
+width: 95%;
+}
+.products article{
+  background: white;
+  padding: 10px 0;
+
+}
+
+.products article i{
+  color:green;
+  border: 1px solid green;
+  background: white;
+  border-radius: 50%;
+  padding: 8px;
+  position: absolute;
+  top: -15px;
+  right: 20px;
+  width: 35px;
+  height: 35px;
+}
+.main-article{
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;     
+  padding: 10px;
+  border-top: 1px solid gray;
+
+
+}
+.price{
+  font-size: 18px;
+  width: 30%;
+}
+.discount{
+  width: 70%;
+  color: green;
+
+
+}
+.discount, .description{
+  font-size: 16px;
+  font-weight: normal;
+
+}
+h3, .description{
+  color:grey;
+
+}
+article{
+  margin-bottom: 15px;
+}
+
+.offers .products{
+  width: 95%;
+}
+
+main section div.products article i{
+  transition:transform 1s;
+
+}
+main section div.products article:hover i{
+  transform: rotate(-90deg);
   
-  h3 {
-    font-size: 24px;
-    color: blue;
-  }
-  
-  p {
-    font-size: 12px;
-  }
-  div.top-header {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 5%;
-  }
-  
-  header {
-    background-color: #eac926;
-    display: flex;
-    flex-direction: column;
-    
-  
-  }
-  html{
-    font-family: 'roboto', sans-serif;
-  }
-  
-  .menu-container{
-    display: none;
-  }
-  
-  .logo-bar-container{
-    /* /* border: 3px solid gray; */
-    display: flex; 
-  
-  }
+}
+
+
+footer{
+  align-items: center;
+  text-align: center;
+  padding: 15px;
+  margin-top: auto;
+  background: #fff;
+}
+
+
+footer i{
+  color:#1259c3;
+  padding: 5px;
+}
+footer div{
+  padding: 20px;
+}
+.pie{
+  padding: 15px;
+}
+@media (min-width: 768px) {
   .logo-container{
-    /* border: 3px solid  red; */
-    display: flex;
-    flex-direction: column;
-  }
-  
-  
-  header div.logo,
-  header .form {
-    width: 50%;
-  }
-  
-  header div.logo {
-    padding: 10px;
-  }
-  header nav {
-    font-size: 12px;
-  }
-  
-  
-  
-  header .form {
-    display: flex;
-    align-items: center;
-    padding: 2px;
-    font-size: 11px;
-  }
-  
-  header .form .input {
-    background-color: #fff;
-    border: 1px solid #000;
-    outline: none;
-    color: #666;
-    padding: 2px;
-  }
-  header .form .submit {
-    background-color: #fff;
-    border: 1px solid #000;
-    color: #666;
-    width: 10%;
-  }
-  
-  header div.top-header p {
-    width: 100%;
-    text-align: center;
-    margin-top: 10px;
-  }
-  
-  .burguer-container{
-    /* border: 3px solid red; */
-    display: flex;
-    justify-content: center;
-    
-    
-    
-  }
-  .search-button-container{
-    /* border: 3px solid pink; */
-    display: flex;
-    align-items: center;
-    width: 50%;
-    
-  }
-  .search-container{
-    /* border: 3px solid brown; */
-    display: flex;
-    width: 90%;
-    height: 25%;
-  
-  }
-  input{
-    width: 95%;
-    border: none;
-    background-color: white;
-    border-radius: 5px 0 0 5px;
-  }
-  button{
-    width: 15%;
-    padding: 1;
-    border: none;
-    background-color:white;
-    border-radius: 0 5px 5px 0;
-  }
-  
-  .card-container{
-    /* border: 3px solid gray; */
-    padding: 15px;
-  }
-  .car-title{
-    font-weight: 400;
-    text-align: center;
-    font-size: robot;
-  }
-  .car-title{
-    margin-right: 10px;
-  }
-  .burguer-menu{
-    background-color: blue;
-    border-radius: 5px;
-    /* padding: 5%; */
-    width: 40px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 5px;
-    color:white
-  }
-  main h3{
-    margin-top: 10px;
-    margin-bottom: 10px;
-    text-align: center;
-  }
-  .last-visit, .offers{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .last-visit .products{
-    width: 90%;
-  }
-  .products article{
-    background:white;
-    padding: 10px 0;
-  }
-  .products article i{
-    color:green;
-    border: 1px solid green;
-    background: white;
-    border-radius: 50%;
-    padding: 8px;
-    position: absolute;
-    top: -15px;
-    right: 20px;
-    width: 35px;
-    height: 35px;
-  }
-  .main-article{
-    display:flex;
-    flex-wrap:wrap;
-    position: relative;
-    padding: 10px;
-    border-top: #666;
-  }
-  .offers .products{
-    width: 95%;
-  }
-  
-  article div.main-article {
-    border-top: solid 1px #ebebeb;
-    padding: 15px;
-    position: relative;
-  }
-  
-  .price {
-    font-size: 18px;
-  }
-  
-  .discount,
-  .description {
-    font-size: 16px;
-    font-weight: normal;
-  }
-  
-  h3,
-  .description {
-    color: #666;
-  }
-  
-  section.banner img {
-    width: 100%;
-  }
-  
-  main {
-    width: 90%;
-    margin: auto;
-  }
-  
-  main section article {
-    background-color: #fff;
-    margin-bottom: 16px;
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);
-  }
-  
-  main section article img {
-    width: 100%;
-  }
-  
-  main section article i,
-  .discount {
-    color: #39b54a;
-  }
-  
-  article .main-article .fa-truck {
-    display: block;
-    font-size: 16px;
-    padding: 5px;
-    width: 30px;
-    height: 30px;
-    border: 1px solid #39b54a;
-    background-color: #fff;
-    border-radius: 50%;
-    position: absolute;
-    right: 20px;
-    top: -15px;
-  }
-  
-  footer{
-    align-items: center;
-    text-align: center;
-  
-    
-  }
-  @media (min-width: 481px) {
-    main section article .description {
-      display: block;
-    }
-  
-    main section article {
-      box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    }
-  
-    main section div.products {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      gap: 10px;
-      justify-content: space-between;
-    }
-  
-    main section div.products article {
-      flex-basis: 48%;
-    }
-  
-    .price,
-    .discount {
-      width: 50%;
-    }
-  }
-  
-  @media (min-width: 481px) {
-    main section article .description {
-      display: block;
-    }
-  
-    main section article {
-      box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    }
-  
-    main section div.products {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      gap: 10px;
-      justify-content: space-between;
-    }
-  
-    main section div.products article {
-      flex-basis: 48%;
-    }
-  
-    .price,
-    .discount {
-      width: 50%;
-    }
-  }
-  
-  @media (min-width: 769px) {
-    .logo-container{
       flex-direction: row;
   }
   .logo-bar-container{
@@ -350,7 +241,118 @@
       width: 45%;
       justify-content: space-between;
   }
-    main section div.products article {
-      flex-basis: 24%;
-    }
+  .last-visit, .offers{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+  .products{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      
   }
+  .products article{
+      width: 49%;
+  }
+  article{
+      height: 26em;
+      transition: all 0.4s ease-in;
+  }
+  .main-article h4{
+      position: relative;
+      bottom: 40px;
+      z-index: -1;
+      opacity: 0;
+      transition: all 0.4s ease-in;
+  
+  }
+  article:hover{
+      box-sizing: 0px 0px 10px rgb(100, 100, 100);
+      height: 27em;
+  
+  
+  }
+  article:hover .main-article h4{
+      position: relative;
+      bottom: 0;
+      z-index: 1;
+      opacity: 1;
+  }
+  footer{
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+    margin-top: auto;
+    background: #fff;
+    display: flex;
+  }
+  .pie{
+    padding: 15px;
+    text-align: center;
+  }
+  
+  }
+  
+  
+  /* Desktop */
+  @media (min-width: 1024px) {
+      .last-visit, .offers{
+          height: 360px;
+  }
+  .products article{
+      width:24%;
+  
+  }
+  .price, .discount{
+      font-size: 14px;
+  
+  }
+  article{
+      height: 18em;
+  }
+  article:hover{
+      height: 19em;
+  }
+  
+footer{
+  align-items: center;
+  text-align: center;
+  padding: 15px;
+  margin-top: auto;
+  background: #fff;
+  display: flex;
+
+}
+.pie{
+  padding: 15px;
+  text-align: center;
+}
+
+  }
+     
+  
+  /* TV hasta 1366 */
+  @media (min-width: 1200px) {
+      
+          .last-visit, .offers{
+              height: 500px;
+      }
+      .products article{
+          width:24%;
+      
+      }
+      .price, .discount{
+          font-size: 14px;
+      
+      }
+      article{
+          height: 28em;
+      }
+      article:hover{
+          height: 25em;
+      }
+      }

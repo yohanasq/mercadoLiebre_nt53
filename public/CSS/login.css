@@ -1,0 +1,248 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body{
+
+    background-color: #ebebeb;
+  }
+  a{
+    text-decoration: none;
+    color: black
+  }
+  ul{
+    list-style: none;
+    
+  }
+  
+  img{
+    width: 100%;
+  
+  }
+  html{
+    font-family: 'roboto', sans-serif;
+  }
+  header{
+  /* border:3px solid green; */
+  background-color: #EAC926;
+  display: flex;
+  flex-direction: column;
+  }
+  
+  .logo-container{
+    /* border: 3px solid  red; */
+    display: flex;
+    flex-direction: column;
+  }
+  .menu-container{
+    /* border:red 3px solid; */
+    display: none;
+  }
+  
+ 
+ 
+  .logo-bar-container{
+    /* /* border: 3px solid gray; */
+    display: flex; 
+  
+  }
+  .card-container{
+    /* border: 3px solid gray; */
+    padding: 15px;
+  }
+  .logo{
+    /* border:3px solid pink; */
+    width: 50%;
+    padding: 10px;
+  }
+  .search-button-container{
+    /* border: 3px solid pink; */
+    display: flex;
+    align-items: center;
+    width: 50%;
+  
+  }
+  .search-container{
+    /* border: 3px solid brown; */
+    display: flex;
+    width: 90%;
+    height: 25%;
+  
+  }
+  .car-title{
+    font-weight: 400;
+    text-align: center;
+    font-size: robot;
+  }
+  .car-title{
+    margin-right: 10px;
+  }
+  .input1{
+    width: 95%;
+    border: none;
+    background-color: #fff;
+    border-radius: 5px 0 0 5px;
+  }
+  .boton1{
+    width: 15%;
+    padding: 1;
+    border: none;
+    background-color:#fff;
+    border-radius: 0 5px 5px 0;
+  }
+section{
+    padding: 100px ;
+    
+}
+
+.boton2{
+    width: 127%;
+    height: 50px;
+    border: none;
+    background-color:blue;
+    border-radius: 5px 5px 5px 5px;
+    text-align: center;
+    margin: 11px 5px 15px -17px;
+    justify-content: center;
+    
+}
+
+
+.enviar{
+    color:#fff
+}
+.input2{
+padding: 18px;
+height: 50px;
+width: 127%;
+border: none;
+background-color: #fff;
+border-radius: 5px 5px 5px 5px;
+margin: 11px 5px 15px -17px;
+}
+
+.input3{
+padding: 15px;
+height: 50px;
+width: 127%;
+border: none;
+background-color: #fff;
+border-radius: 5px 5px 5px 5px;
+margin: 11px 5px 15px -17px;
+
+}
+  footer{
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+    margin-top: auto;
+    background: #fff;
+  }
+  
+  
+  footer i{
+    color:#1259c3;
+    padding: 5px;
+  }
+  footer div{
+    padding: 20px;
+  }
+  @media (min-width: 768px) {
+    .logo-container{
+        flex-direction: row;
+    }
+    .logo-bar-container{
+        width: 50%;
+    }
+    .card-container{
+        display: flex;
+        width: 50%;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    .card-container h2 {
+        font-size: 16px;
+    
+    }
+    
+    .menu-container{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+    }
+    ul{
+        display: flex;
+        width: 45%;
+        justify-content: space-between;
+    }
+    }
+    @media (min-width: 768px){
+      .input2{
+        padding: 18px;
+        height: 50px;
+        width: 108%;
+        border: none;
+        background-color: #fff;
+        border-radius: 5px 5px 5px 5px;
+        margin: 11px 5px 15px -17px;
+        }
+        
+        .input3{
+        padding: 15px;
+        height: 50px;
+        width: 108%;
+        border: none;
+        background-color: #fff;
+        border-radius: 5px 5px 5px 5px;
+        margin: 11px 5px 15px -17px;
+        
+        }
+        .boton2{
+          width: 108%;
+          height: 50px;
+          border: none;
+          background-color:blue;
+          border-radius: 5px 5px 5px 5px;
+          text-align: center;
+          margin: 11px 5px 15px -17px;
+          justify-content: center;
+          
+      }
+    }
+    @media (min-width: 1024px){
+      
+      .input2{
+        padding: 18px;
+        height: 50px;
+        width: 103%;
+        border: none;
+        background-color: #fff;
+        border-radius: 5px 5px 5px 5px;
+        margin: 11px 5px 15px -17px;
+      }
+      .input3{
+        padding: 18px;
+        height: 50px;
+        width: 103%;
+        border: none;
+        background-color: #fff;
+        border-radius: 5px 5px 5px 5px;
+        margin: 11px 5px 15px -17px;
+      
+      }
+      .boton2{
+        width: 103%;
+        height: 50px;
+        border: none;
+        background-color:blue;
+        border-radius: 5px 5px 5px 5px;
+        text-align: center;
+        margin: 11px 5px 15px -17px;
+        justify-content: center;
+        
+    }
+    }

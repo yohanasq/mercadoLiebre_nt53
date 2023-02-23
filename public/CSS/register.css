@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body{
+
+    background-color: #ebebeb;
+  }
+ 
+  html{
+    font-family: 'roboto', sans-serif;
+  }
+  body h1{
+    margin: 16px  ;
+    font-size: 12px;
+  }
+
+  .text-email input{
+    padding: 18px;
+    height: 50px;
+    width: 90%;
+    border: none;
+    background-color: #fff;
+    border-radius: 5px 5px 5px 5px;
+    margin: 20px;
+    
+  }
+  .radio input{
+   
+    margin: 20px;
+    
+  }
+  .checkbox input{
+  
+    margin: 20px;
+    
+  }
+  .fecha input{
+    padding: 18px;
+    height: 50px;
+    width: 90%;
+    border: none;
+    background-color: #fff;
+    border-radius: 5px 5px 5px 5px;
+    margin: 20px;
+  }
+  label input{
+    width: 100px;
+    margin: 10px;
+  }
+  .boton2{
+    width: 90%;
+    height: 50px;
+    border: none;
+    background-color:blue;
+    border-radius: 5px 5px 5px 5px;
+    text-align: center;
+    margin: 20px;
+    justify-content: center;
+    
+}
+  .boton3{
+    width: 90%;
+    height: 50px;
+    border: none;
+    background-color:blue;
+    border-radius: 5px 5px 5px 5px;
+    text-align: center;
+    margin: 20px;
+    justify-content: center;
+    
+}
+a.enviar{
+    color:#fff;
+    text-decoration: none;
+}
+@media (min-width: 768px){
+  body{
+    margin: 8px 0 0 20px;
+  }
+}
+@media (min-width: 1024px){
+  body{
+    margin: 20px 0 0 50px;
+  }
+}
